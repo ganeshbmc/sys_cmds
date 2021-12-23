@@ -1,6 +1,6 @@
 ### Go to
 > [Home page](https://ganeshbmc.github.io/)  
-> [System commands page](/resources/system_commands/directory.md)
+> [System commands page](/resources/system_commands/directory.html)
 
 # First few steps  
     pwd     Present working directory
@@ -42,4 +42,4 @@
 
 ### Go to
 > [Home page](https://ganeshbmc.github.io/)  
-> [System commands page](/resources/system_commands/directory.md)
+> [System commands page](/resources/system_commands/directory.html)
