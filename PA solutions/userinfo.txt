@@ -1,0 +1,3 @@
+Username: ganesh
+UID: 1000
+HOME: /home/ganesh
