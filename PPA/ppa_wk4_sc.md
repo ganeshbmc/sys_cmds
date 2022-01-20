@@ -2,7 +2,9 @@
 
 > Write a command to print the name of directories(in the current working directory) that have read, write and execute permissions for other users. Print only the directory name on each line.
 
-
+    ls -l | grep '^d.*rwx\b' | cut -d ':' -f 2 | cut -d ' ' -f 2
+    
+    # Another solution
     ls -l | grep 'rwx\b' | cut -d ':' -f 2 | cut -d ' ' -f 2
 
 <br>
