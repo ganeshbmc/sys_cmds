@@ -23,9 +23,14 @@ For  e.g. if 'pincode=515002' then your command should display 'Andhra Pradesh A
 >Andhra Pradesh Circle,Kurnool Region,Anantapur Division,Alamuru B.O,515002,BO,Delivery,ANANTHAPUR,Andhra Pradesh
 >Andhra Pradesh Circle,Kurnool Region,Anantapur Division,Allapuram B.O,515766,BO,Delivery,ANANTHAPUR,Andhra Pradesh
 
-    pin=`cat Pincode_info.csv | grep $pincode | cut -d ',' -f 1,3 | sed 's/ Circle,/ /' | sed 's/ Division//'
+    part=`cat Pincode_info.csv | grep "$pin" | cut -d ',' -f 1,4` ; 
+    part2=`echo ${part/Circle,/}` ; 
+    echo ${part2/ Division/}  
 
-    (Doesn't work)
+    # Another solution using sed which has not been taught yet.
+    cat Pincode_info.csv | grep $pin | cut -d ',' -f 1,4 | sed 's/ Circle,/ /' | sed 's/ Division//'  
 
+> **Note**: There seems to be an error with the input file. Instead of fields (1, 3) , fields (1,4) worked.  
+> 
 <br>
 <br>
