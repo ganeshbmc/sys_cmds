@@ -1,0 +1,21 @@
+[    0.011616] ANDROMEDA: SSDT ALIENS7A24FC70 00029F (v02 INTEL  sensrhub 00000000 INTL 20160422)
+[    0.011620] ANDROMEDA: SSDT ALIENS7A24FF10 003002 (v02 INTEL  PtidDevc 00001000 INTL 20160422)
+[ 8997.003092] SOLAR: MARTIANS: Minimum firmware build 1 week 10 2014
+[ 8997.003694] SOLAR: MARTIANS: Found device firmware: intel/ibt-12-16.sfi
+[ 8998.471823] SOLAR: MARTIANS: Waiting for firmware download to complete
+[ 8998.471975] SOLAR: MARTIANS: Firmware loaded in 1433866 usecs
+[ 8998.472011] SOLAR: MARTIANS: Waiting for device to boot
+[ 8998.484057] SOLAR: MARTIANS: Device booted in 11772 usecs
+[ 8998.484133] SOLAR: MARTIANS: Found Intel DDC parameters: intel/ibt-12-16.ddc
+[ 8998.487149] SOLAR: MARTIANS: Applying Intel DDC parameters completed
+[ 8998.488140] SOLAR: MARTIANS: Reading supported features failed (-16)
+[ 8998.489241] SOLAR: MARTIANS: Firmware revision 0.1 build 212 week 30 2021
+[ 9003.708255] input: HD 4.50BTNC (AVRCP) as /devices/virtual/input/input39
+[ 9253.793091] SATURN: deauthenticating from b0:7f:b9:44:61:f9 by local choice (Reason: 3=DEAUTH_LEAVING)
+[ 9258.659918] SATURN: authenticate with da:6f:71:7c:a6:62
+[ 9258.667930] SATURN: send auth to da:6f:71:7c:a6:62 (try 1/3)
+[ 9258.681977] SATURN: authenticated
+[ 9258.683652] SATURN: associate with da:6f:71:7c:a6:62 (try 1/3)
+[ 9258.695652] SATURN: PLUTO AssocResp from da:6f:71:7c:a6:62 (capab=0x1431 status=0 aid=1)
+[ 9258.699011] SATURN: associated
+[ 9259.784743] IPv6: ADDRCONF(NETDEV_CHANGE): SATURN: link becomes ready
