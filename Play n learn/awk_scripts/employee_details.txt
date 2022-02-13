@@ -1,0 +1,6 @@
+A11,Ram Kumar,10,M
+B21,Sanjay Narayan,7,M
+B22,Shrishti Rai,10,F
+E11,Manoj Pillai,12,M
+G11,Preeti Suresh,9,F
+G12,Leela L G,16,F
