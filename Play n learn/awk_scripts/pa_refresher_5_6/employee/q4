@@ -1,0 +1,40 @@
+while read id; do 
+name=$(grep NAME $id | { read first rest; echo $rest; }) 
+ctc_old=$(grep CTC $id) 
+ctc_old=${ctc_old/CTC \$/} 
+hike=1.15 
+echo $id $name \$$ctc_old \$$(bc <<< $hike*$ctc_old)
+done < appraisal_list 
+> salary_hike
+
+
+while read id; do 
+name=$(grep NAME $id | { read first rest; echo $rest; }) 
+ctc_old=$(grep CTC $id) 
+ctc_old=${ctc_old/CTC \$/} 
+hike=1.15 
+echo $id $name \$$ctc_old \$$(($hike*$ctc_old))
+done < appraisal_list 
+> salary_hike
+
+
+while read id; do 
+name=$(grep NAME $id | { read first rest; echo $rest; }) 
+ctc_old=$(grep CTC $id) 
+ctc_old=${ctc_old/CTC /} 
+hike=1.15 
+echo $id $name \$$ctc_old \$$(($hike*$ctc_old))
+done < appraisal_list 
+> salary_hike
+
+
+while read id; do 
+while read -ra line; do for i in ${line[@]}; do 
+if [[ $i =~ "NAME" ]]; then 
+name="${line[$((i+1))]} ${line[$((i+2))]}" 
+elif [[ $i =~ "CTC" ]]; then 
+ctc_old=${line[$((i+1))]/\$/} 
+fi 
+done 
+done <$id hike=1.15 echo $id $name \$$ctc_old \$$(echo $hike*$ctc_old | bc)
+done < appraisal_list

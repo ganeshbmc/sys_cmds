@@ -1,0 +1,21 @@
+map_id_name=($(cat map | sort))
+appraisal_ids=($(cat appraisal_list | sort))
+n=${#map_id_name[@]}
+j=0
+for ((i=0; i<n; i=i+3)); do 
+if [[ ${map_id_name[$i]} == ${appraisal_ids[$j]} ]]; then 
+echo ${map_id_name[$((i+1))]} 
+${map_id_name[$((i+2))]} ((j++)) 
+fi
+done
+
+
+
+
+declare -A map_id_name;
+while read id name; do 
+map_id_name[$id]=$name
+done <<< $(cat map | sort)
+for i in $(cat appraisal_list | sort); do 
+echo ${map_id_name[$i]}
+done
