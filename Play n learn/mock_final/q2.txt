@@ -1,0 +1,1 @@
+cat Pincode_info.csv | cut -d "," -f 9 | awk 'BEGIN{flag=0; count=0; state=st}{if ($flag==1); then $count++; fi; if $0==$state; then $flag==1; else $flag=0; $state=$0; $count++; fi}
