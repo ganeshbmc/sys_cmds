@@ -1,0 +1,4 @@
+1. Print the first row items one by one on each line.
+2. Print the list of bowlers and batsmen.
+3. Print the list of bowlers faced by a given batsman.
+4. 

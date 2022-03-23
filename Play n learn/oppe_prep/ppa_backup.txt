@@ -1,0 +1,7 @@
+# wk6
+
+## ppa1
+	if [ $(cat data.txt | wc -l) -gt 16 ]; then echo "Yes"; else echo "No"; fi;
+
+## ppa2
+	
