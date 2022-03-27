@@ -1,0 +1,43 @@
+# GrPA practice
+
+# wk6
+
+## GrPA3
+
+	getoptions
+	if option == something; do it's thing
+	doing it's thing:
+	option l
+		awk print NR
+	option w
+		begin{RS="[ \n]"}{print NR}
+	option n
+		^[:digit:]${print}
+	option s
+		begin{c=0}
+		str{c++}
+		end{print c}
+
+## GrPA4
+
+	awk 'BEGIN[FS=","}{if ($4=="Female"){print $1 "@xyz.com"}}' EmployeeDetails.csv
+
+## GrPA6
+	
+	BEGIN{
+        FS=",";
+        y[1997]=0;y[1998]=0;y[1999]=0;y[2000]=0;
+	v1=0;v2=0;v3=0;v4=0;
+}
+{
+    if($1 ~ /1997/) {y[1997]+=$3; v1+=1;}
+    if($1 ~ /1998/) {y[1998]+=$3; v2+=1;}
+    if($1 ~ /1999/) {y[1999]+=$3; v3+=1;}
+    if($1 ~ /2000/) {y[2000]+=$3; v4+=1;}
+}
+END{
+    print int(y[1997]/v1);
+    print int(y[1998]/v2);
+    print int(y[1999]/v3);
+    print int(y[2000]/v4);
+}
