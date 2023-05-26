@@ -1,0 +1,2829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta>
+      <journal-title-group>
+        <journal-title>Trends in Cardiovascular Medicine</journal-title>
+      </journal-title-group>
+    </journal-meta>
+    <article-meta>
+      <title-group>
+        <article-title>Artificial intelligence in cardiology ✩,✩✩</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <string-name>Dipti Itchhaporia</string-name>
+          <email>drdipti@yahoo.com</email>
+          <xref ref-type="aff" rid="aff0">0</xref>
+        </contrib>
+        <aff id="aff0">
+          <label>0</label>
+          <institution>Hoag Hospital Newport Beach and University of California</institution>
+          ,
+          <addr-line>520 Superior Avenue, Suite 325, Newport Beach, Irvine, CA 92663</addr-line>
+          ,
+          <country country="US">United States</country>
+        </aff>
+      </contrib-group>
+      <pub-date>
+        <year>2020</year>
+      </pub-date>
+      <volume>32</volume>
+      <issue>2022</issue>
+      <fpage>34</fpage>
+      <lpage>41</lpage>
+      <abstract>
+        <p>a b s t r a c t This review examines the current state and application of artificial intelligence (AI) and machine learning (ML) in cardiovascular medicine. AI is changing the clinical practice of medicine in other specialties. With progress continuing in this emerging technology, the impact for cardiovascular medicine is highlighted to provide insight for the practicing clinician and to identify potential patient benefits.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Artificial intelligence</kwd>
+        <kwd>Machine learning</kwd>
+        <kwd>Cardiovascular medicine</kwd>
+        <kwd>Cardiology</kwd>
+        <kwd>Clinical decision making</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec-1">
+      <title>-</title>
+      <p>i n f o</p>
+    </sec>
+    <sec id="sec-2">
+      <title>Introduction</title>
+      <p>Since the last decade of the 19th century with the invention
+of the electrocardiogram (ECG), technology has played a
+significant role in cardiovascular medicine. The extensive use of
+technology in the clinical setting, coupled with the early adoption
+of guideline-directed-medical-therapy (GDMT) aimed at better
+patient outcomes, has prepared the specialty for the promising era
+of artificial intelligence (AI) and, more specifically, machine
+learning (ML).</p>
+      <p>
+        In everyday clinical practice, the diagnosis and treatment of
+cardiovascular disease (CVD) relies on data in several formats. These
+formats include patient history, physical examination, laboratory
+data, non-invasive imaging diagnostics and invasive angiography.
+The introduction of newer data-rich technologies, including
+mobile telemetry devices, wearable and implantable recording
+devices, biometrics from the electronic health record (EHR), and
+research and other patient-generated health data, requires
+cardiologists to perform an increasingly sophisticated analysis [
+        <xref ref-type="bibr" rid="ref1 ref2 ref3 ref4 ref5">1–5</xref>
+        ].
+Bonderman suggests that data and historical evidence may not be the
+only factors that influence the clinical decision-making process [
+        <xref ref-type="bibr" rid="ref6">6</xref>
+        ].
+Further, inclusion of social bias and the prejudice of irrelevant
+factors characterized by Kahnerman et al. are also incorporated by
+clinicians [
+        <xref ref-type="bibr" rid="ref7">7</xref>
+        ].
+      </p>
+      <p>Cardiovascular medicine, like other specialties, has faced
+pressure to achieve the triple aim: optimize patient care, reduce costs,
+and improve outcomes. The sheer volume of data required for this
+level of precise care is voluminous and changes too quickly to be
+used effectively without the help of a robust clinical decision
+support tool. Krittanawong et al. suggest that, without cognitive
+computing, our specialty faces practical challenges due to
+overutiliza</p>
+      <p>Technology pervades our everyday lives, and there is no doubt
+that the future of healthcare is intimately intertwined with
+technological advancements. Although AI has existed for over five
+decades, only recently have we begun to truly realize the
+potential of its applications, in the form of ML, in medicine. This
+potential holds the promise of better patient care across all healthcare
+institutions by augmenting the work of clinicians.</p>
+      <p>
+        The terms AI, ML, and deep learning (DL) are often used
+interchangeably but are essentially hierarchical. ML methods provide a
+set of tools to achieve AI and includes supervised, unsupervised
+and reinforcement learning [
+        <xref ref-type="bibr" rid="ref10 ref9">9,10</xref>
+        ].
+      </p>
+      <p>AI is the overarching concept that refers to the use of
+specialized mathematical algorithms, which give machines the ability to
+perform problem solving functions, word or object recognition, and
+decision making. This rapidly applicable technique deals with
+complex problems by analyzing data using neural networks in an effort
+to mimic intelligent human behavior.</p>
+      <p>
+        A subfield of AI, ML encompasses various techniques for
+solving complicated problems with big data by identifying interaction
+patterns among variables. It uses software that allows computers
+to learn from data, identify patterns and make decisions [
+        <xref ref-type="bibr" rid="ref1 ref10 ref6 ref9">1,6,9,10</xref>
+        ].
+In contrast to traditional statistics, one of the applications of ML is
+building automated clinical decision systems (such as readmission
+and mortality score systems) that help doctors make more accurate
+Fig. 1.. Framework of AI, ML, DL.
+predictions, rather than simple estimated score systems. The ML
+community, which has seen increased computational power amidst
+the availability of big data, sees an opportunity in the healthcare
+sector to tackle complex tasks [
+        <xref ref-type="bibr" rid="ref11">11</xref>
+        ]. As noted above, ML can be
+categorized into three learning types: supervised; unsupervised; and
+reinforcement.
+      </p>
+      <p>
+        Supervised learning, which has the widest applicability to date,
+is an ML approach wherein a model is given both inputs and the
+corresponding ‘correct’ responses during the training [
+        <xref ref-type="bibr" rid="ref10">10</xref>
+        ]. It deals
+with classification and regression problems, and is used to develop
+a model for classifying future events or to find which variables
+are most relevant to the outcome. Although supervised learning
+benefits from having a clearly delineated relationship between the
+inputs and outputs, incorrect data labels may result in a less
+effective model, since the correct input-output link is determined
+entirely by the training data. AI has the ability to lessen social
+bias and noise, but is subject to bias when given a biased training
+set.
+      </p>
+      <p>
+        Unsupervised learning is a type of ML algorithm used to draw
+inferences from datasets consisting of input data without labeled
+responses [
+        <xref ref-type="bibr" rid="ref10">10</xref>
+        ]. The most common unsupervised learning method
+is cluster analysis, which is used for exploratory data analysis to
+find hidden patterns or grouping in data, data mining for sequence
+and pattern mining in medical imaging for image segmentation.
+Unsupervised learning seeks to identify novel disease mechanisms,
+genotypes, or phenotypes from hidden patterns present in the
+data; the objective is to find the hidden patterns in the data
+without feedback from humans.
+      </p>
+      <p>
+        In reinforcement learning, the model learns from trial and error
+and rewards via a feedback system [
+        <xref ref-type="bibr" rid="ref10">10</xref>
+        ]. This particular method has
+been used in selecting the optimal medication regimen for
+nonsmall cell lung cancer [
+        <xref ref-type="bibr" rid="ref12">12</xref>
+        ]. Reinforcement learning can be viewed
+as a hybrid of supervised and unsupervised learning; the
+objective of reinforcement learning is to maximize the accuracy of
+algorithms using trial and error [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ].
+      </p>
+      <p>
+        A subset of ML is DL. DL attempts to imitate the workings of the
+human brain in processing data and creating patterns for use in
+decision making. It is inspired by the complex workings of the
+human brain and strives to find high-level abstract representations of
+a given data set. DL has enabled many practical applications of ML
+and, by extension, the overall field of AI. This method has emerged
+because of advances in computer processor power and the
+availability of big data [
+        <xref ref-type="bibr" rid="ref13">13</xref>
+        ]. It uses multiple layers of artificial
+neuronal networks that can generate automated predictions from
+input (training datasets). Benefits of this method over traditional ML
+include less data for training and ease of scale with more accuracy
+[
+        <xref ref-type="bibr" rid="ref14">14</xref>
+        ]. DL can be very powerful in image recognition and can
+potentially be used in cardiovascular imaging (e.g., 2D-speckle-tracking
+echocardiography, 3D-speckle-tracking echocardiography,
+angiography, cardiac magnetic resonance). It can also be trained in an
+unsupervised manner for unsupervised learning tasks (e.g., novel
+drugdrug interaction). It also works well with noisy data, such as
+3Dspeckle tracking echocardiography and strain imaging data. DL
+algorithms can facilitate the use of artificial real-time cardiovascular
+imaging with better spatial and temporal resolution [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ].
+      </p>
+      <p>
+        Deep learning, as it is primarily used, is essentially a
+statistical technique for classifying patterns, based on sample data, using
+neural networks with multiple layers. Although DL is useful in
+certain tasks such as classifying medical images, DL is not suitable
+for all clinical data issues. Kingsbury and coworkers noted that “In
+our experience across several clinical problems, conventional, off
+the shelf ML methods can be trained faster and have overall better
+performance when compared to deep neural networks” [
+        <xref ref-type="bibr" rid="ref15">15</xref>
+        ].
+However, the use of DL in every application that requires data analysis
+should not be done at the expense of other ML algorithms with
+less computation and memory requirements, which are capable of
+producing similar results. Despite the variety of recent successes
+of deep learning, there are limitations in the application of the
+technique. First, deep learning is not the optimal machine
+learning technique for all data analysis problems. For problems in which
+data are well structured or optimal features are well-defined, other
+simpler machine learning methods such as logistic regression,
+support vector machines, and random forests are typically easier to
+apply and more effective [
+        <xref ref-type="bibr" rid="ref16">16</xref>
+        ].
+      </p>
+      <p>
+        Convolution Neural Networks (CNNs) are a class of deep
+neural networks, most commonly applied to analyzing visual imagery.
+It has been postulated by Dilsizian and Siegel that CNNs are best
+optimized to the task of image pattern recognition or image
+analysis [
+        <xref ref-type="bibr" rid="ref18">18</xref>
+        ]. CNNs require little preprocessing and often use the raw
+images fed to them, making them a particularly powerful and
+versatile tool [
+        <xref ref-type="bibr" rid="ref18">18</xref>
+        ].The use of CNNs in this manner has increased
+drastically over the last several years, with researchers finding success
+in the use of CNNs to provide subtle features that a clinician may
+miss on a scan, aiding in the detection of a variety of
+pathologies. Abdolmanafi et al., for example, utilized a deep-learning CNN
+in the classification of coronary artery optical coherence
+tomography (OCT) images in patients with Kawasaki disease. However, they
+noted in order to fine tune the process, a considerable amount of
+time is required [
+        <xref ref-type="bibr" rid="ref21">21</xref>
+        ]. Additionally, imaging data can be particularly
+difficult to manage, especially given the wide array of different
+format types in which different imaging modalities are stored, such as
+JPEG and DICOM.
+      </p>
+    </sec>
+    <sec id="sec-3">
+      <title>Cognitive computing</title>
+      <p>
+        The term cognitive computing (CC) is used to describe AI
+systems that can synthesize data from various information sources,
+weighing context and conflicting evidence to suggest possible
+answers. In general, cognitive computing is used to assist humans
+in their decision-making process. A number of AI technologies
+are required for a computer system to build cognitive models,
+including machine learning, deep learning, neural networks, natural
+language processing (NLP) and sentiment analysis [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ].IBM Watson
+is a well-known example of cognitive computing; it continuously
+learns from datasets and can help predict outcomes using multiple
+algorithms. CC is currently used at Memorial Sloan Kettering and
+MD Anderson, where it uses unstructured data, best practice data,
+and clinical study results to help make diagnosis and treatment
+decisions for patients [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ].One example of this use in cardiology was
+illustrated by Dr. Partho Sengupta, who developed an associative
+memory classifier, a cognitive computing machine learning
+algorithmic approach, to differentiate constrictive pericarditis from
+restrictive cardiomyopathy, and demonstrated its feasibility for
+automated interpretation of speckle-tracking echocardiography data
+[
+        <xref ref-type="bibr" rid="ref20">20</xref>
+        ].
+      </p>
+      <sec id="sec-3-1">
+        <title>Natural language processing (NLP)</title>
+        <p>
+          NLP is an example of machine learning systems with the ability
+to understand and interpret human speech and writing. They
+interface with subjective data used in electronic health records (EHRs)
+in order to extract useful information that can be used in algorithm
+generation. These algorithms can be used to carry out high-volume
+tasks formerly accomplished by physicians. A large amount of data
+are presented to the cognitive system in order to increase precision
+of decision making. Ng et al. have described guidelines that
+recommend the types and amount of data needed to effectively use
+disease prediction models using EHR data [
+          <xref ref-type="bibr" rid="ref21">21</xref>
+          ]. Sohn et al.
+demonstrated the feasibility of NLP in processing radiology reports and
+developed a model for identifying aneurysms [
+          <xref ref-type="bibr" rid="ref22">22</xref>
+          ]. Since NLPs can
+scan multiple databases, libraries and other data sources, they are
+useful in identifying critical valvular and vascular stenosis,
+hypertrophic cardiomyopathy, atrial septal defects, and other anomalies
+[
+          <xref ref-type="bibr" rid="ref22 ref23">22,23</xref>
+          ].
+        </p>
+        <p>
+          In 2018, Garvin et al. demonstrated the use of a novel NLP in
+collecting and classifying clinical data from more than 1000
+patients with heart failure in order to determine the quality of
+inpatient care given [
+          <xref ref-type="bibr" rid="ref24">24</xref>
+          ]. Although this technology is still in its nascent
+stages, the potential to accurately and effectively utilize the vast
+stores of clinical data included in EHRs and leverage this
+information to assess present quality of care is a promising method in
+directing future improvements.
+        </p>
+      </sec>
+      <sec id="sec-3-2">
+        <title>Applications of ML</title>
+        <p>The potential of ML, DL and CC to change the manner in which
+cardiac data is utilized –their accuracy, objectivity, and efficiency
+– is undeniable. With the development of increasingly
+powerful machines and as DL approaches gain traction, the
+diagnostic fields of radiology (computed tomography [CT], magnetic
+resonance imaging [MRI] and mammography interpretation), pathology
+(microscopic and cytological diagnoses), dermatology (rash
+identification and pigmented lesion evaluation for potential melanoma),
+and ophthalmology (retinal vessel examination to predict the risk
+for diabetic retinopathy and cardiovascular disease) can be further
+advanced in the interest of elevating patient care.</p>
+        <p>
+          The potential applications of ML in medicine are numerous and
+represent various ranges of computational difficulty. The use of
+extracted data in the generation of algorithms to apply to a given
+problem is the most common application of ML in healthcare.
+The utility of such ML algorithms has already been established in
+numerous settings. For example, automated ML-driven algorithms
+have been helpful in the classification and early diagnosis of
+micromelanomas, the implications of which are reduced mortality and
+less intensive treatment requirements [
+          <xref ref-type="bibr" rid="ref25">25</xref>
+          ]. The efficacy of
+MLdeveloped algorithms heavily depends on the availability of data
+to build these predictive frameworks. In cardiology, these data sets
+can come from a variety of modalities. Data-rich sources include
+electrocardiograms (EKGs), echocardiograms and other myocardial
+imaging modalities; ‘omics’ technologies including genomics and
+proteomics that can aid AI in the profiling of particular molecular
+entities and help risk-stratify patients; and information recorded
+by clinicians in the EHR. However, not all data sets share equal
+potential in their applicability to AI systems. The data collected from
+EHRs is often subjective in nature and thus difficult for accurate AI
+utilization, therefore making NLP useful [
+          <xref ref-type="bibr" rid="ref26">26</xref>
+          ].
+        </p>
+        <p>
+          The efficacy of ML in the analysis of predefined tasks, such as
+image processing for border detection on a scan or recognizing
+suspicious areas on an image, is a crucial aspect of ML’s utility in
+healthcare. Enhancing the process of visual pattern recognition has
+profound implications on the process of clinical diagnostics. It is
+important to understand the shortcomings of human visual pattern
+recognition. Two independent studies have found that 50–63% of
+U.S. women who receive regular mammograms over ten years will
+receive at least one false positive; additionally, one third of the
+time, two or more radiologists examining the same mammogram
+will disagree on the interpretation [
+          <xref ref-type="bibr" rid="ref27">27</xref>
+          ]. Analyzing images and
+performing diagnostic prediction tasks, for example, using ML to
+detect diabetic retinopathy, are harder than the simple
+aforementioned tasks but still possible with the present technology [
+          <xref ref-type="bibr" rid="ref28">28</xref>
+          ]. In
+this setting, visual pattern recognition software, which can store
+and compare tens of thousands of images while using the same
+heuristic techniques as humans, is estimated to be 5% to 10% more
+accurate than the average clinician [
+          <xref ref-type="bibr" rid="ref28">28</xref>
+          ]. So far, ML has exhibited
+demonstrable value in the analysis of different myocardial imaging
+modalities, from EKGs to MRI, and in utilizing that information to
+establish probabilistic frameworks whereby they may establish the
+presence or lack of disease in a given image.
+        </p>
+        <p>
+          AI, especially ML, has impacted healthcare in four
+overarching ways [
+          <xref ref-type="bibr" rid="ref9">9</xref>
+          ]. One is through computer vision. Computer vision
+is a field of AI that trains computers to process, analyze,
+interpret and understand digital images. Using digital images from
+photographs, videos and DL models, machines can accurately
+identify and classify objects. Applying this feature to medical images,
+computer vision can support disease detection and clinical
+decisions regarding classification for staging and prognosis. The second
+and third are predictive modeling and precision medicine-guided
+care recommendations. Predictive modeling is used for assessing
+genetic risk (genomics) and for predicting the course of chronic
+disease (phenomapping). This approach requires multiple datasets
+coupled with natural learning processing and machine learning.
+Precision medicine looks at an individual’s health data (EHR data,
+wearable data), and omics data (i.e., genomics, proteomics, and
+metabolomics) and uses cluster analysis and other ML analytics
+to make individualized recommendations. The last way is a health
+system performance enhancer, which uses ML analytics to gain
+insights into healthcare system management and improve clinical
+care and patient safety.
+        </p>
+        <p>Uncertainty is a fact of everyday medical practice, with
+complex variables and determinants that govern a patient’s health and
+create diagnostic and therapeutic dilemmas. This uncertainty can
+be addressed by AI, specifically ML, as it augments the abilities of
+clinicians by helping them provide the highest standard of care.
+This aspect has the potential to create uniform medical care from
+different health-care providers.</p>
+        <p>
+          AI offers the ability to further standardize the quality of care
+by working with clinicians by providing all the necessary and
+pertinent information and making predictions required to make the
+optimal diagnosis and the best plan of care for follow-up. For
+example, Hannun et al. demonstrate the efficacy of DL in the
+classification of various EKG rhythms, a powerful addition to every
+cardiologist’s diagnostic toolkit [
+          <xref ref-type="bibr" rid="ref29">29</xref>
+          ]. AI performs the analysis of
+data from clinical notes, allowing clinicians to meet documentation
+standards while integrating societal, clinical, and personal context
+into the decision-making process. The use of AI in this regard may
+help standardize quality of care by helping to reduce two major
+elements of decision-making error: social bias and noise, factors that
+may affect a physician’s judgment, such as mood, for example [
+          <xref ref-type="bibr" rid="ref7">7</xref>
+          ].
+It is impossible to completely eliminate human biases, but using
+AI can significantly reduce such errors. Ultimately, the optimal role
+of ML will be to support clinicians, ensuring that the final
+decision regarding diagnosis and treatment falls on the clinician; it is
+hoped that the analysis and augmentation of information with ML
+will help ensure optimal clinical decisions.
+        </p>
+        <p>Hospitals are also scrutinizing ML tools to increase capacities
+without expanding building space, improve clinician
+productivity without adding to work hours, and minimize patient
+waittimes while increasing the number of incoming patients. A
+growing number of medical centers are considering a new,
+innovative form of digital management called hospital command centers.
+These centers use advanced predictive analytic technology and ML
+to monitor and analyze real-time data on patient admissions,
+patient discharges, bed availability, and other hospital logistics to
+address their unique needs and strategic functions. As a result
+of the Affordable Care Act in 2010, health care organizations and
+providers have had to deal with increases in patient volumes and
+regulations with new documentation standards. This development
+has led to clinician burnout, a factor that makes the achievement
+of the quality goal of the quadruple aim impossible. As health
+organizations grapple with this issue, it is hoped that the hospital
+command centers may help simplify administrative burdens and
+optimize the practice of patient-centered care.</p>
+      </sec>
+      <sec id="sec-3-3">
+        <title>Limitations of ML in medical practice</title>
+        <p>While putting the power of ML to work in clinical settings
+presents a variety of exciting applications, as mentioned above, this
+endeavor is not without several crucial limitations. The algorithms
+developed by machine learning technologies are only as effective
+as the data used to frame them. There is a wide variety of sources
+from which important patient health information could be drawn
+–certainly cardiac parameters, such as heart rate, rhythm, etc. –
+much of which could be used by ML systems in the development
+of valuable analytic algorithms. Conversely, the lack of such data
+and large amounts of poor-quality data compromises the integrity
+of this process; the use of sparse or biased data sets could
+result in problematic algorithms that do not accurately represent the
+clinical situation in question. Additionally, many valuable sources
+of information, such as EHR data, as well as information
+regarding social, cultural and economic determinants, may be difficult to
+find or implement. Training issues also limit the success of ML. The
+models used also may change over time, requiring frequent
+updating. The algorithm may additionally become over tailored to the
+training sample rather than finding the relationships in the data.</p>
+        <p>
+          Although ML – and AI in general – has become considerably
+more advanced in recent years, the technology is still in its early
+stages compared to many other, more established, modalities. This
+reality poses potential complications for its integration into
+medical practice. The application of ML into medicine may be costly,
+discouraging its widespread utilization. Although it is reasonable to
+assume that ML has the potential to revolutionize physician
+workflow in many positive ways, the initial implementation of these
+technologies may prove jarring for providers as they struggle to
+adjust day-to-day routine. According to Cucolo et al., the ‘black box”
+nature of the ML algorithm and the difficulty for clinicians to
+understand and trust the interpretation of the data may be the most
+difficult hurdle to overcome [
+          <xref ref-type="bibr" rid="ref30">30</xref>
+          ].
+        </p>
+      </sec>
+    </sec>
+    <sec id="sec-4">
+      <title>Applications in cardiology</title>
+      <p>Technology has been a mainstay in the field of cardiology for
+the past several decades, with successful integration into
+diagnostics and intervention. The efficacy of utilizing AI and specifically
+ML in cardiology has also been established in a variety of different
+settings, such as coronary artery disease with risk prediction, and
+cardiac imaging, including electrocardiography and
+echocardiography.</p>
+    </sec>
+    <sec id="sec-5">
+      <title>Cardiac imaging and imaging interpretation</title>
+      <p>Cardiac imaging is an area that shows early promise. DL
+systems such as CNNs have shown great potential as valuable tools
+in cardiac imaging. Many authors have published results
+highlighting the use of CNN and other methods for coronary calcium
+detection, thrombus volume characterization, left atrium segmentation,
+coronary stenosis, carotid artery characterization, detection of and
+classification of aortic aneurysm, and others.</p>
+      <p>
+        Diagnostic support for cardiac imaging uses segmentation of
+known anatomical landmarks. In this application, the model is
+trained using deep reinforcement learning to quickly navigate
+through the volume of CT images to find and localize the
+anatomical landmarks [
+        <xref ref-type="bibr" rid="ref31">31</xref>
+        ]. Once the landmarks are identified, AI-powered
+segmentation methods can be used to quantify the structures.
+This application may be useful for modeling and segmentation of
+heart valves and, more specifically, for sizing implants. Its use may
+also facilitate the switching from real-time x-ray to 3D CT in the
+catheterization laboratory [
+        <xref ref-type="bibr" rid="ref32">32</xref>
+        ].
+      </p>
+      <p>
+        ML can have a positive impact on imaging reconstruction,
+analysis and interpretation. Its ability to analyze large amounts of
+imaging data and then couple with the use of dedicated imaging
+software can allow imaged displays to show more anatomic views,
+allowing for ease of image interpretation [
+        <xref ref-type="bibr" rid="ref33">33</xref>
+        ]. Du et al. tested DL
+technology for angiographic recognition of lesion characteristics,
+including diameter stenosis, calcification, thrombus and dissection
+[
+        <xref ref-type="bibr" rid="ref34">34</xref>
+        ].Work done with DL to automate calcium scoring in patients
+following Rb-PET/CT showed good correlation for the classification
+with five categories, from very low to very high calcium scores
+[
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ]. DL algorithms have also been shown to diagnose obstructive
+coronary artery disease more accurately compared to conventional
+methods using myocardial perfusion imaging (MPI) [
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ].
+      </p>
+      <p>
+        Ciusdel et al. trained a deep neural network on 17,800
+angiograms and evaluated 27,900 angiograms for fully automated
+cardiac phase and end diastolic frame detection on coronary
+angiograms, with an accuracy of 92.6%, a sensitivity of 92.4% and
+specificity of 92.9% [
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ]. An ML algorithm to evaluate
+intravascular ultrasound images and automatically calculate lumen area and
+plaque burden, showing tremendous agreement with expert
+analysis, was tested at Emory University [
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ].This method has potential
+for augmenting care in the cardiac catheterization laboratory.
+      </p>
+    </sec>
+    <sec id="sec-6">
+      <title>Electrocardiography</title>
+      <p>
+        Electrocardiogram (ECG) analysis is at the core of
+cardiovascular pathology diagnosis. Since 1996, when it was first described,
+the use of AI for electrocardiography continues to be refined [
+        <xref ref-type="bibr" rid="ref38">38</xref>
+        ].
+ECG analysis is the most developed application of machine
+learning methods in cardiology, owing mostly to publically available
+databases for training and testing such as the MIT-BIH, Physionet’s
+Physiobank, INCART, or the American Heart Association database
+[
+        <xref ref-type="bibr" rid="ref48">48</xref>
+        ]. The open access to ECG databases has led to the
+development of many methods and approaches for computer-aided ECG
+arrhythmia classification over the last decades.
+      </p>
+      <p>
+        The ECG reflects the electrical activity of the heart, and for a
+normal beat in sinus rhythm includes the P wave, the QRS
+complex, and the T wave. Heartbeat classification focuses on the
+automatic identification of normal beats and abnormal beats, and can
+be useful for detecting ectopic beats or arrhythmic events.
+Modern ML models can identify QRS complexes and P and T waves
+with high precision, thus allowing for calculations of clinically
+significant parameters such as HR [
+        <xref ref-type="bibr" rid="ref11">11</xref>
+        ]. The use of DL systems has
+improved the analytic power of EKGs; indeed, DL has been
+successful in accurately classifying the EKGs of cardiac patients into
+normal, abnormal, and life-threatening states [
+        <xref ref-type="bibr" rid="ref39">39</xref>
+        ].DL techniques
+to help automate the detection of atrial fibrillation (AFib) are
+occurring with EKGs and ambulatory EKG systems [
+        <xref ref-type="bibr" rid="ref40">40</xref>
+        ]. The
+Stanford Machine Learning Group used a form of DL, a 34-layer
+convolutional neural network to detect a range of arrhythmias which
+outperformed a board-certified cardiologist in recall and precision
+[
+        <xref ref-type="bibr" rid="ref41">41</xref>
+        ].ML is being rapidly implemented into wearable devices
+operating deep neural network (DNN) in ECG analysis. Kannathal et al.
+used a deep neural network to classify ECG signals of cardiac
+patients into normal, abnormal, and life-threatening states, and found
+the classification to be correct in approximately 99% of test cases
+[
+        <xref ref-type="bibr" rid="ref17">17</xref>
+        ].
+      </p>
+      <p>
+        Wearable devices for ECG monitoring are having an impact
+on the effort to move the clinic to the home. The Apple Watch
+and AliveCor are well known examples of such devices [
+        <xref ref-type="bibr" rid="ref48">48</xref>
+        ]. In
+the case of Alive-Cor, the wearable technology is integrated in a
+smart phone application and records ECG data from patients. These
+data are analyzed with a machine learning algorithm to help
+detect atrial fibrillation or other arrhythmias. Machine learning
+techniques provide accurate and automatic classifications of heartbeats
+to detect arrhythmias or unexpected changes in heart
+morphology. They may help in automatic disease diagnosis, monitoring and
+stratification by handling extended ECG recordings for which
+visual and manual inspections can be tedious and time consuming.
+Their real-time use, along with their adaptability to be embedded
+on wearable devices, can help with efficient and reliable
+monitoring of ECG activity at home.
+      </p>
+    </sec>
+    <sec id="sec-7">
+      <title>Echocardiograms</title>
+      <p>
+        Much work has also been done in the integration of ML
+systems in the analysis of echocardiography. In 2016, Sengupta
+and colleagues utilized a cognitive computing system to
+distinguish between constrictive pericarditis and restrictive
+cardiomyopathy, while also demonstrating its efficacy in the interpretation
+of speckle-tracking echocardiography data [
+        <xref ref-type="bibr" rid="ref35">35</xref>
+        ].
+      </p>
+      <p>Echocardiograms are an important tool in the diagnosis and
+management of cardiovascular disease. ML has the potential to
+change the landscape of echocardiography with its complimentary
+tools that can help generate accurate, consistent and automated
+interpretation of echocardiograms, thus potentially reducing the risk
+of human error, as interpretations are presently done by clinician
+expertise. Automation with longitudinal strain and 3D
+echocardiography has shown great accuracy and reproducibility, allowing the
+incorporation of these techniques into daily workflow. These
+attributes can help decrease inter-operator variability and give
+experience to non-expert readers.</p>
+      <p>
+        Research calls to mind the feasibility of applying ML
+models to provide rapid, highly accurate and consistent assessment
+of echocardiograms, comparable to the ability of clinicians.
+Algorithms are capable of accurately quantifying a wide range of
+features, such as the severity of valvular heart disease or the
+ischemic burden in patients with coronary artery disease. There is at
+least one innovative software solution, developed by Edwards
+LifeSciences, that focuses on improving the quality of patient care and
+growing structural heart programs [
+        <xref ref-type="bibr" rid="ref36">36</xref>
+        ]. Artificial intelligence is
+the driving force behind its core capability of assessing diagnostic
+echocardiogram quality, following patients through the care
+pathway, and helping physicians and their clinical staff ensure their
+patients are receiving guideline directed care.
+      </p>
+      <p>
+        A recent study of over 14,000 echocardiograms showed promise
+for AI applications to automatically classify image orientation,
+perform image segmentation and assign a diagnosis [
+        <xref ref-type="bibr" rid="ref37">37</xref>
+        ]. Detection
+of wall motion abnormalities on echocardiography requires
+experience and can thus suffer from observer variability. AI solutions
+are emerging, which have good accuracy for this task [
+        <xref ref-type="bibr" rid="ref35 ref37">35,37</xref>
+        ].
+      </p>
+      <p>ML in electrocardiography is routinely used in patient care, as
+opposed to ML in echocardiography, which is still in its infancy.
+Work such as that being undertaken utilizing Edward’s software
+will further this field.</p>
+    </sec>
+    <sec id="sec-8">
+      <title>Clinical decision support</title>
+      <p>
+        Clinical decision support systems with cognitive computing are
+being developed and use ML, pattern recognition, and NLP. In
+coronary artery disease (CAD), the capacity of ML systems to develop
+algorithms capable of making clinical predictions was
+demonstrated by Baxt in 1991, in which an artificial neural network was
+trained on more than 300 patients who were hospitalized with
+suspicion of myocardial Infarction (MI). Upon subsequent testing of
+new patients presenting to the Emergency Department with chest
+pain, the computer-derived protocol had a higher sensitivity in
+detecting MI compared to that of the clinicians caring for these
+patients [
+        <xref ref-type="bibr" rid="ref42">42</xref>
+        ]. In a pilot study published in 2018, an ML algorithm
+showed 94% accuracy for predicting a myocardial infarction in
+patients presenting with chest pain in the emergency department
+[
+        <xref ref-type="bibr" rid="ref43">43</xref>
+        ].
+      </p>
+      <p>
+        More recently, the Francis Crick Institute developed a model,
+using ML, which was found to be better at predicting risk of death
+in patients with heart disease than in models designed by
+medical experts. The model for coronary artery disease was designed
+using the electronic health data of over 80,000 patients, collected
+as part of routine care by scientists at the Crick, working
+collaboratively with colleagues at the Farr Institute of Health Informatics
+Research and University College London Hospitals NHS Foundation
+Trust. They outperformed experts using self-taught ML techniques
+[
+        <xref ref-type="bibr" rid="ref44">44</xref>
+        ]. It should be noted here that, although this result may be
+statistically significant (C-index for AI algorithm 0.801 vs C-index
+for conventional risk prediction for death in CVD patients 0.793),
+it may not be clinically significant at this level of difference. This
+study illustrates an important issue of the difference between
+statistical vs. clinical significance. Whereas statistical significance
+indicates reliability of study results, clinical significance reflects its
+impact on clinical practice. Statistical significance testing has
+established traditionally accepted values, which is lacking for
+evaluation of clinical significance. Statistical significance is largely
+dependent on the study’s sample size; in large sample sizes, even small
+treatment effects, which maybe clinically non-significant can
+appear statistically significant. Thus, it is important to interpret
+carefully whether statistically significance is clinically meaningful [
+        <xref ref-type="bibr" rid="ref45">45</xref>
+        ].
+      </p>
+      <p>
+        Recently, Dawes et al. developed an algorithm of
+threedimensional systolic cardiac motion based on MRI; this algorithm
+allowed the researchers to more accurately predict survival rates
+of patients with newly diagnosed pulmonary hypertension [
+        <xref ref-type="bibr" rid="ref46">46</xref>
+        ]. In
+general, AI technologies are being utilized for CAD risk prediction,
+including machine, and coronary calcium scoring algorithms to
+make predictions regarding patient risk. Importantly, the
+machinelearning approach can address the limitations of conventional risk
+scores by taking into consideration multiple risk factors,
+determining the relationship between these factors and outcomes.
+Conventional prediction models take into account standard risk factors
+such as age, cholesterol levels and blood pressure but do not
+account for factors like medications, other medical conditions and
+non-traditional biomarkers [
+        <xref ref-type="bibr" rid="ref13">13</xref>
+        ].
+      </p>
+      <p>
+        ML algorithms are based on fewer assumptions and can, in
+some cases, provide superior and more robust predictions [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ]. For
+example, Azzalini et al. used generalized boosted regression (an
+ML approach) to identify whether contrast media type was an
+independent predictor of contrast-induced acute kidney injury after
+percutaneous coronary intervention [
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ].
+      </p>
+      <p>
+        A clinical decision support system studied for interpretation
+and treatment of stable coronary artery disease is CEREBRIA-1
+(Machine Learning vs Expert Human Opinion to Determine
+Physiologically Optimized Coronary Revascularization Strategies). In this
+study, an ML algorithm for analysis of 1008 instantaneous
+wavefree ratio pullback tracings were evaluated and compared with the
+analysis of a team of interventionalists, and it found that the ML
+program was non-inferior to the interventionalist for PCI decision
+making [
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ] (Table 1).
+      </p>
+    </sec>
+    <sec id="sec-9">
+      <title>Precision cardiac medicine</title>
+      <p>
+        Aside from imaging, assessment of CAD and interventional
+cardiology, AI has shown promise in the area of precision cardiac
+medicine. Giri et al. state in their paper, “To date, big data, such
+as ‘omics’ data, are too large and heterogeneous to be stored,
+analyzed, and used to their full potential”[
+        <xref ref-type="bibr" rid="ref9">9</xref>
+        ]. AI techniques may solve
+this issue as well as allow for automatic generation of new
+hypotheses, instead of requiring that physicians postulate them [
+        <xref ref-type="bibr" rid="ref5">5</xref>
+        ].
+Unsupervised DL may facilitate exploration of novel factors in score
+systems and better prediction analysis, or add hidden risk factors
+to existing models [
+        <xref ref-type="bibr" rid="ref1 ref8">8,1</xref>
+        ]. This approach could lead to new models
+for antiplatelet/anticoagulant therapy, bleeding versus stroke risk,
+mortality risk with procedures, as examples [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ]. ML-based
+techniques also can highlight long-term outcomes or late complications
+for patients who have undergone a specific procedure or are
+prescribed a specific drug.
+      </p>
+      <p>In 2015, Shah et al. utilized several learning algorithms in the
+analysis of clinical, laboratory, ECG, and echocardiographic data
+of almost 400 patients with heart failure with preserved
+ejecAI application</p>
+      <p>Data source(s)
+- Algorithms
+- GDMT
+- Unsupervised</p>
+      <p>Machine Learning
+- Algorithms
+- Supervised</p>
+      <p>Machine Learning
+- Algorithms
+- Supervised</p>
+      <p>Machine Learning
+- Unsupervised</p>
+      <p>Machine Learning
+- Precision Medicine</p>
+      <p>Platforms
+- Supervised</p>
+      <p>Machine Learning</p>
+      <p>Deep Learning
+- Unsupervised</p>
+      <p>Machine Learning
+- Cognitive Learning
+- Patient–generated</p>
+      <p>health data
+- Sociodemographics
+- “Omics”
+- Electronic Health</p>
+      <p>Record (EHR)
+- Diagnostics
+- Remote Monitoring
+- Big Data
+- EHR
+- Diagnostic Imaging</p>
+      <p>– 3D
+- “Omics”
+- Precision Medicine</p>
+      <p>Platforms
+- Big Data
+- EHR
+- Diagnostic Imaging
+- “Omics”
+- Precision Medicine</p>
+      <p>Platforms
+- Large clinical</p>
+      <p>databases (ACC)
+- Precision Medicine</p>
+      <p>Platforms
+- Large clinical</p>
+      <p>databases (ACC)
+- Literature</p>
+      <p>Knowledge
+- Multi-omic data
+- Diagnostic Images:</p>
+      <p>
+        CT, MRI, Echo,
+Angiography, EKG
+tion fraction (HFpEF) and classified the patients into three distinct
+phenogroups based on a variety of different clinical
+characteristics and outcomes [
+        <xref ref-type="bibr" rid="ref14">14</xref>
+        ]. The success of this endeavor indicates that
+this approach could be used more extensively in the future to
+improve the manner in which heterogeneous pathologies are
+classified, thereby helping clinicians best make decisions regarding
+resource allocations. Krittanawong et al. also identify other complex
+cardiovascular disorders that could benefit from AI-driven
+precision medicine, such as pulmonary hypertension and
+cardiomyopathy [
+        <xref ref-type="bibr" rid="ref8">8</xref>
+        ].
+      </p>
+    </sec>
+    <sec id="sec-10">
+      <title>Data sources: uses and limitations</title>
+      <p>Clinical cardiology offers an overabundance of different sources
+of data for use by AI in the formation of algorithms. This
+information includes phenotypic data, such as EKGs and other myocardial
+imaging modalities, many of which provide narrow data sets that
+are optimally suited for machine learning. What is especially
+interesting and exciting in the field of cardiology is the use of
+datarich technology, such as implantable recording devices, or even
+everyday technology such as smart phones and smart watches that
+keep track of cardiac parameters like heart rate and are able to
+record tracings of an EKG. These technologies then present the
+potential for direct-to-patient applications of cardiology. The
+acquisition of these large and diverse datasets and patient-generated
+data streams from new wearable and implantable sensor
+technologies can provide a very granular view of the intra- and
+interindividual variations in health and disease. Making full use of these
+multidimensional data streams will require the computational and
+data analytic ability of ML to process these data meaningfully and
+rapidly.</p>
+      <p>
+        Presently, clinicians often do not have time to review all of
+this information derived from these sources, since this task
+involves combing through numerous pages of a single patient’s
+device data. ML has the potential to provide processed summaries of
+these data, which would be most useful in guiding therapy. As the
+connected self generates all kinds of data, for example, heart rates
+and ambient arrhythmias, we need to understand what is normal.
+For example, if someone has a run of atrial fibrillation, a
+technology has to first classify this event correctly, and then there has to
+be an evidence standard that can influence the clinical care. This
+issue of what is the right evidence standard for AI was discussed
+at length by Maddox et al.; they argued that an evidence
+standard is required to demonstrate outcomes and a lack of unintended
+consequences [
+        <xref ref-type="bibr" rid="ref26">26</xref>
+        ].Further, the need of machine learning to utilize
+data-rich pools in order to develop effective algorithms necessarily
+precludes them from being helpful in analyses of rare disorders for
+which we simply do not have enough data to train machine
+learning.
+      </p>
+      <p>
+        It is predicted that soon, health care organizations and
+providers will embrace algorithmic solutions on smart phones or
+tablets first, followed by pattern recognition software and, finally,
+machine-generated best practices for individual patients [
+        <xref ref-type="bibr" rid="ref4 ref6">4,6</xref>
+        ].
+Patients will be able to use a variety of AI tools to care for
+themselves, just as they manage multiple other aspects of their lives
+today through ubiquitous usage of AI systems like Apple’s Siri or
+Amazon’s Alexa [
+        <xref ref-type="bibr" rid="ref4">4</xref>
+        ].
+      </p>
+      <p>Those most excited about AI technology wonder whether AI
+could autonomously detect warning signs of disease or acute
+incidents through fine-tuned predictive algorithms and send that
+information directly to patients. Such an application may not only
+save lives, but also aid in managing patient behavior through
+active tracking of parameters such as weight, blood pressure, and
+activity level, and help warn patients. How the integration of AI can
+modify these behaviors is not known. It is important to note that
+presently this technology is designed to aid a clinician’s decision
+making rather than be used by the patient directly for their
+healthcare management. Despite the efficacy that ML has exhibited in
+terms of forming predictive models by utilizing presently available
+data, an important dimension that is often missing from these
+predictions is the timeline. Although an algorithm may suggest that a
+patient is at higher risk for developing a myocardial infarction, it
+cannot define an accurate timeline of the event because presently
+available datasets do not adequately define such timelines. In spite
+of this issue, AI may continue to be useful in helping clinicians to
+make risk predictions.</p>
+    </sec>
+    <sec id="sec-11">
+      <title>Conclusion</title>
+      <p>
+        AI and ML systems have initiated a paradigm shift in health
+care. Clearly, these systems are useful in the identification of
+clinically significant patterns in high volumes of heterogeneous data –
+be it from smart watches, EHRs or ECGs – even if the importance
+of these patterns is not causative, but rather purely correlational
+[
+        <xref ref-type="bibr" rid="ref19">19</xref>
+        ]. EHRs were not originally designed to predict disease risk or
+offer treatment options to consider. But when combined with ML,
+EHR data could potentially do both, transforming health care in the
+process [
+        <xref ref-type="bibr" rid="ref26 ref47 ref6">47,6,26</xref>
+        ].
+      </p>
+      <p>
+        In the day-to-day practice of cardiology, AI, specifically ML, is
+expanding its footprint, presently most suited to a spectrum of
+computational tasks with a range of difficulties, the best of which
+are narrow tasks, such as image processing, in which the system
+is working with a predefined context. Even tasks of pattern
+prediction and broad data analysis are conceivable today, if these
+endeavors are specifically asked for. In other words, the systems are
+not self-directed and require appropriate data sets. Therefore, the
+role of ML in cardiology is most likely to remain supportive for
+the foreseeable future, augmenting cardiologists with relevant
+information and predictions regarding diagnosis and best treatment
+but leaving the ultimate decision in the hands of the clinician. For
+AI, ML integration comes with the need for appropriate evidence
+standards; there is a lack of standardization across datasets,
+making optimal models for clinical integration challenging. According
+to a recent work by Maddox et al., developing task-appropriate
+standards, as well as an elucidation of the manner by which ML
+develop their predictive insights beyond the idea of a “black box”
+methodology, may prove helpful in assuaging some of the concerns
+that clinicians may have in integrating ML into their practice [
+        <xref ref-type="bibr" rid="ref26">26</xref>
+        ].
+      </p>
+      <p>
+        History has shown us that the forward progress of
+technological advancement is unlikely to slow down; medical technology is
+no exception. The forward momentum of AI and ML technology
+has demonstrated that the technology will not replace clinicians
+but will augment their care delivery. Ultimately, it is the
+clinician who has the capacity to demonstrate empathy, compassion,
+and complex reasoning under uncertain conditions, traits that
+patients want in their medical care. Indeed, ML could be the very
+thing that catapults American healthcare into the future, helping
+to clarify the best care approaches, creating new approaches for
+diagnosing and treating hundreds of complex medical problems,
+and measuring adherence. This outcome will not happen overnight,
+of course; recall that efforts to produce self-driving vehicles date
+back to the 1950s. There are certainly many challenges that remain
+ahead: Who will regulate this industry? Who will objectively
+assess the effectiveness of this new technology? Who will be held
+accountable for errors? These are questions being asked about
+autonomous driving technology today [
+        <xref ref-type="bibr" rid="ref11">11</xref>
+        ]. But sometime in the
+future, ML will disrupt healthcare as we know it.
+      </p>
+      <p>In preparation for that day, health care providers need to
+actively engage to adapt their practice and to shape the technology.
+Rather than fearing that the ML technology will displace them,
+they should direct and craft the technology for end users. The
+anguish of the clinician’s EHR experience drives the importance of
+creating the type of change that is needed and wanted. The
+favorable adoption of AI in the form of ML into medical practice can
+be further facilitated by its integration into medical school
+curricula. This feature will help develop future clinicians who are not
+only effective, empathetic healthcare providers, but who are also
+accomplished in the utilization of AI systems in their practice in
+a manner that improves diagnosis, care, and outcomes. AI,
+specifically ML, is guaranteed to be more closely intertwined with our
+lives, and the field of cardiology would do well to embrace this
+trend and the potential it presents.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="ref1">
+        <mixed-citation>
+          [1]
+          <string-name>
+            <surname>Johnson</surname>
+            <given-names>KW</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Soto</surname>
+            <given-names>JT</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Glicksberg</surname>
+            <given-names>BS</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Shameer</surname>
+            <given-names>K</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Miotto</surname>
+            <given-names>R</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ali</surname>
+            <given-names>M</given-names>
+          </string-name>
+          , et al.
+          <article-title>Artificial intelligence in cardiology</article-title>
+          .
+          <source>J Am Coll Cardiol</source>
+          <year>2018</year>
+          ;
+          <volume>71</volume>
+          (
+          <issue>23</issue>
+          ):
+          <fpage>2668</fpage>
+          -
+          <lpage>79</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref2">
+        <mixed-citation>
+          [2]
+          <string-name>
+            <surname>Kuo</surname>
+            <given-names>FC</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Mar</surname>
+            <given-names>BG</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Lindsley</surname>
+            <given-names>RC</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Lindeman</surname>
+            <given-names>NI</given-names>
+          </string-name>
+          .
+          <article-title>The relative utilities of genome-wide, gene panel, and individual gene sequencing in clinical practice</article-title>
+          .
+          <source>Blood</source>
+          <year>2017</year>
+          ;
+          <volume>130</volume>
+          :
+          <fpage>433</fpage>
+          -
+          <lpage>9</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref3">
+        <mixed-citation>
+          [3]
+          <string-name>
+            <surname>Muse</surname>
+            <given-names>ED</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Barrett</surname>
+            <given-names>PM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Steinhubl</surname>
+            <given-names>SR</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Topol</surname>
+            <given-names>EJ</given-names>
+          </string-name>
+          .
+          <article-title>Towards a smart medical home</article-title>
+          .
+          <source>Lancet</source>
+          <year>2017</year>
+          ;
+          <volume>10067</volume>
+          :
+          <fpage>358</fpage>
+          -
+          <lpage>89</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref4">
+        <mixed-citation>
+          [4]
+          <string-name>
+            <surname>Steinhubl</surname>
+            <given-names>SR</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Muse</surname>
+            <given-names>ED</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Topol</surname>
+            <given-names>EJ</given-names>
+          </string-name>
+          .
+          <article-title>The emerging field of mobile health</article-title>
+          .
+          <source>Sci Transl Med</source>
+          <year>2015</year>
+          ;
+          <volume>7</volume>
+          :
+          <fpage>283</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref5">
+        <mixed-citation>
+          [5]
+          <string-name>
+            <surname>Shameer</surname>
+            <given-names>K</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Badgeley</surname>
+            <given-names>MA</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Miotto</surname>
+            <given-names>R</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Glicksberg</surname>
+            <given-names>BS</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Morgan</surname>
+            <given-names>JW</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Dudley</surname>
+            <given-names>JT</given-names>
+          </string-name>
+          .
+          <article-title>Translational bioinformatics in the era of real-time biomedical, health care and wellness data streams</article-title>
+          .
+          <source>Brief Bioinform</source>
+          <year>2017</year>
+          ;
+          <volume>18</volume>
+          :
+          <fpage>105</fpage>
+          -
+          <lpage>24</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref6">
+        <mixed-citation>
+          [6]
+          <string-name>
+            <surname>Bonderman</surname>
+            <given-names>D.</given-names>
+          </string-name>
+          <article-title>Artificial intelligence in cardiology</article-title>
+          .
+          <source>Wien KlinWochenschr</source>
+          <year>2017</year>
+          ;
+          <volume>129</volume>
+          :
+          <fpage>866</fpage>
+          -
+          <lpage>8</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref7">
+        <mixed-citation>
+          [7]
+          <string-name>
+            <surname>Kahnerman</surname>
+            <given-names>D</given-names>
+          </string-name>
+          , et al.
+          <article-title>How to overcome the high, hidden cost of inconsistent decision making</article-title>
+          .
+          <source>Harv Bus Rev</source>
+          <year>2016</year>
+          ;
+          <volume>R10</volume>
+          :
+          <fpage>36</fpage>
+          -
+          <lpage>43</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref8">
+        <mixed-citation>
+          [8]
+          <string-name>
+            <surname>Krittanawong</surname>
+            <given-names>C</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Zhang</surname>
+            <given-names>HJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Wang</surname>
+            <given-names>Z</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Aydar</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kitai</surname>
+            <given-names>T.</given-names>
+          </string-name>
+          <article-title>Artificial intelligence in precision cardiovascular medicine</article-title>
+          .
+          <source>J Am Col Cardiol</source>
+          <year>2017</year>
+          ;
+          <volume>69</volume>
+          (
+          <issue>21</issue>
+          ):
+          <fpage>2657</fpage>
+          -
+          <lpage>64</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref9">
+        <mixed-citation>
+          [9]
+          <string-name>
+            <surname>Sardar</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Abbott</surname>
+            <given-names>JD</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kundu</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Aronow</surname>
+            <given-names>HD</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Granada</surname>
+            <given-names>JF</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Giri</surname>
+            <given-names>J</given-names>
+          </string-name>
+          .
+          <article-title>Impact of artificial intelligence on interventional cardiology: from decision-making aid to advanced interventional procedure assistance</article-title>
+          .
+          <source>JACC Cardiovasc Interv</source>
+          <year>2019</year>
+          ;
+          <volume>12</volume>
+          :
+          <fpage>1293</fpage>
+          -
+          <lpage>303</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref10">
+        <mixed-citation>
+          [10]
+          <string-name>
+            <surname>Petersen</surname>
+            <given-names>SE</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Abdulkareem</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Leiner</surname>
+            <given-names>T.</given-names>
+          </string-name>
+          <article-title>Artificial intelligence will transform cardiac imaging-opportunities and challenges</article-title>
+          .
+          <source>Front Cardiovasc Med</source>
+          .
+          <year>2019</year>
+          ;
+          <volume>6</volume>
+          :
+          <fpage>133</fpage>
+          . doi:
+          <volume>10</volume>
+          .3389/fcvm.
+          <year>2019</year>
+          .
+          <volume>00133</volume>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref11">
+        <mixed-citation>
+          [11]
+          <string-name>
+            <surname>Al'Aref</surname>
+            <given-names>SJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Anchouche</surname>
+            <given-names>K</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Singh</surname>
+            <given-names>G</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Slomka</surname>
+            <given-names>PJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kolli</surname>
+            <given-names>KK</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kumar Amit</surname>
+          </string-name>
+          , et al.
+          <article-title>Clinical applications of machine learning in cardiovascular disease and its relevance to cardiac imaging</article-title>
+          .
+          <source>Eur Heart J</source>
+          <year>2019</year>
+          ;
+          <volume>40</volume>
+          (
+          <issue>24</issue>
+          ):
+          <fpage>1975</fpage>
+          -
+          <lpage>86</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref12">
+        <mixed-citation>
+          [12]
+          <string-name>
+            <surname>Rabbani</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kanevsky</surname>
+            <given-names>J</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kafi</surname>
+            <given-names>K</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Chandelier</surname>
+            <given-names>F</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Giles</surname>
+            <given-names>FJ</given-names>
+          </string-name>
+          .
+          <article-title>Role of artificial intelligence in the care of patients with nonsmall cell lung cancer</article-title>
+          .
+          <source>Eur J Clin Investig</source>
+          <year>2018</year>
+          ;
+          <volume>48</volume>
+          . doi:
+          <volume>10</volume>
+          .1111/eci.12901.
+        </mixed-citation>
+      </ref>
+      <ref id="ref13">
+        <mixed-citation>
+          [13]
+          <string-name>
+            <surname>Weng</surname>
+            <given-names>SF</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Reps</surname>
+            <given-names>J</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kai</surname>
+            <given-names>J</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Garibaldi</surname>
+            <given-names>JM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Qureshi</surname>
+            <given-names>M.</given-names>
+          </string-name>
+          <article-title>Can machine-learning improve cardiovascular risk prediction using routine clinical data</article-title>
+          .
+          <source>PLoS One</source>
+          <year>2017</year>
+          ;
+          <volume>12</volume>
+          :
+          <fpage>e0174944</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref14">
+        <mixed-citation>
+          [14]
+          <string-name>
+            <surname>Shah</surname>
+            <given-names>SJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Katz</surname>
+            <given-names>DH</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Selvaraj</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Burke</surname>
+            <given-names>MA</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Yancy</surname>
+            <given-names>CW</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Gheorghiade</surname>
+            <given-names>M</given-names>
+          </string-name>
+          , et al.
+          <article-title>Phenomapping for novel classification of heart failure with preserved ejection fraction</article-title>
+          .
+          <source>Circulation</source>
+          <year>2015</year>
+          ;
+          <volume>131</volume>
+          :
+          <fpage>269</fpage>
+          -
+          <lpage>79</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref15">
+        <mixed-citation>
+          [15]
+          <string-name>
+            <surname>Chen</surname>
+            <given-names>D</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Liu</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kingsbury</surname>
+            <given-names>P</given-names>
+          </string-name>
+          , et al.
+          <article-title>Deep learning and alternative learning strategies for retrospective real-world clinical data</article-title>
+          .
+          <source>NPJ Digit Med</source>
+          <year>2019</year>
+          ;
+          <volume>2</volume>
+          :
+          <fpage>43</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref16">
+        <mixed-citation>
+          [16]
+          <string-name>
+            <surname>Chartrand</surname>
+            <given-names>G</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Cheng</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Vorontsov</surname>
+            <given-names>E</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Drozdzal</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Turcotte</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Pal</surname>
+            <given-names>C</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kadoury</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Tang</surname>
+            <given-names>A</given-names>
+          </string-name>
+          .
+          <article-title>Deep learning: a primer for radiologists</article-title>
+          .
+          <source>RadioGraphics</source>
+          <year>2017</year>
+          ;
+          <volume>37</volume>
+          :
+          <fpage>2113</fpage>
+          -
+          <lpage>31</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref17">
+        <mixed-citation>
+          [17]
+          <string-name>
+            <surname>Kannathal</surname>
+            <given-names>N</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Acharya</surname>
+            <given-names>UR</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Lim</surname>
+            <given-names>CM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Sadasivan</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Krishnan</surname>
+            <given-names>S.</given-names>
+          </string-name>
+          <article-title>Classification of cardiac patient states using artificial neural networks</article-title>
+          .
+          <source>Exp Clin Cardiol</source>
+          <year>2003</year>
+          ;
+          <volume>8</volume>
+          (
+          <issue>4</issue>
+          ):
+          <fpage>206</fpage>
+          -
+          <lpage>11</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref18">
+        <mixed-citation>
+          [18]
+          <string-name>
+            <surname>Dilsizian</surname>
+            <given-names>ME</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Siegel</surname>
+            <given-names>EL</given-names>
+          </string-name>
+          .
+          <article-title>Machine meets biology: a primer on artificial intelligence in cardiology and cardiac imaging</article-title>
+          .
+          <source>Nucl Cardiol</source>
+          <year>2018</year>
+          ;
+          <volume>20</volume>
+          :
+          <fpage>139</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref19">
+        <mixed-citation>
+          [19]
+          <string-name>
+            <surname>Abdolmanafi</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Duong</surname>
+            <given-names>L</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Dahdah</surname>
+            <given-names>N</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Cheriet</surname>
+            <given-names>F</given-names>
+          </string-name>
+          .
+          <article-title>Deep feature learning for automatic tissue classification of coronary artery using optical coherence tomography</article-title>
+          .
+          <source>Biomed Opt Express</source>
+          <year>2017</year>
+          ;
+          <volume>8</volume>
+          :
+          <fpage>1203</fpage>
+          -
+          <lpage>20</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref20">
+        <mixed-citation>
+          [20]
+          <string-name>
+            <surname>Sengupta</surname>
+            <given-names>PP</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Huang</surname>
+            <given-names>YM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Bansal</surname>
+            <given-names>M</given-names>
+          </string-name>
+          , et al.
+          <article-title>Cognitive machine-learning algorithm for cardiac imaging: a pilot study for differentiating constrictive pericarditis from restrictive cardiomyopathy</article-title>
+          .
+          <source>Circ Cardiovasc Imaging</source>
+          <year>2016</year>
+          ;
+          <volume>9</volume>
+          (
+          <issue>6</issue>
+          ):e004330. doi:
+          <volume>10</volume>
+          .1161/CIRCIMAGING.115.004330.
+        </mixed-citation>
+      </ref>
+      <ref id="ref21">
+        <mixed-citation>
+          [21]
+          <string-name>
+            <surname>Ng</surname>
+            <given-names>K</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Steinhubl</surname>
+            <given-names>SR</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>deFilippi</surname>
+            <given-names>C</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Dey</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Stewart</surname>
+            <given-names>WF</given-names>
+          </string-name>
+          .
+          <article-title>Early detection of heart failure using electronic health records: practical implications for time before diagnosis, data diversity, data quantity and data density</article-title>
+          .
+          <source>Circ Cardiovasc Qual Outcomes</source>
+          <year>2016</year>
+          ;
+          <volume>9</volume>
+          (
+          <issue>6</issue>
+          ):
+          <fpage>649</fpage>
+          -
+          <lpage>58</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref22">
+        <mixed-citation>
+          [22]
+          <string-name>
+            <surname>Sohn</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ye</surname>
+            <given-names>Z</given-names>
+          </string-name>
+          , et al.
+          <article-title>Identifying abdominal aortic aneurysm cases and controls using natural language processing of radiology reports</article-title>
+          .
+          <source>AMIA JT Summons Tranl Sci Proc</source>
+          <year>2013</year>
+          ;
+          <year>2013</year>
+          :
+          <fpage>249</fpage>
+          -
+          <lpage>53</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref23">
+        <mixed-citation>
+          [23]
+          <string-name>
+            <surname>Sardar</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Abbott</surname>
+            <given-names>DJ</given-names>
+          </string-name>
+          , et al.
+          <source>Impact of artificial intelligence on interventional cardiology. JACC Cardiovasc Interv</source>
+          <year>2019</year>
+          ;
+          <volume>12</volume>
+          (
+          <issue>14</issue>
+          ):
+          <fpage>1293</fpage>
+          -
+          <lpage>303</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref24">
+        <mixed-citation>
+          [24]
+          <string-name>
+            <surname>Garvin</surname>
+            <given-names>J.H.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kim</surname>
+            <given-names>Y.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Gobbel</surname>
+            <given-names>G.T.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Matheny</surname>
+            <given-names>M.E.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Redd</surname>
+            <given-names>A.</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Bray</surname>
+            <given-names>B.E.</given-names>
+          </string-name>
+          , et al.
+          <article-title>Automating quality measures for heart failure using natural language processing: a descriptive study in the department of veterans affairs</article-title>
+          .
+          <source>2018</source>
+        </mixed-citation>
+      </ref>
+      <ref id="ref25">
+        <mixed-citation>
+          [25]
+          <string-name>
+            <surname>Jaworek-Korjakowska</surname>
+            <given-names>J</given-names>
+          </string-name>
+          .
+          <article-title>Computer-aided diagnosis of micro-malignant melanoma lesions applying support vector machines</article-title>
+          .
+          <source>J Biomed Biotech</source>
+          <year>2016</year>
+          ;
+          <volume>6</volume>
+          :
+          <fpage>1</fpage>
+          -
+          <lpage>8</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref26">
+        <mixed-citation>
+          [26]
+          <string-name>
+            <surname>Maddox</surname>
+            <given-names>TM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Rumsfeld</surname>
+            <given-names>JS</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Payne</surname>
+            <given-names>PRO</given-names>
+          </string-name>
+          .
+          <article-title>Questions for artificial intelligence in health care</article-title>
+          .
+          <source>JAMA</source>
+          <year>2018</year>
+          . doi:
+          <volume>10</volume>
+          .1001/jama.
+          <year>2018</year>
+          .
+          <volume>18932</volume>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref27">
+        <mixed-citation>
+          [27]
+          <string-name>
+            <surname>DeFrank</surname>
+            <given-names>JT</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Rimer</surname>
+            <given-names>BK</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Bowling</surname>
+            <given-names>JM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Earp</surname>
+            <given-names>JA</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Breslau</surname>
+            <given-names>ES</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Brewer</surname>
+            <given-names>NT</given-names>
+          </string-name>
+          .
+          <article-title>Influence of false-positive mammography results onsubsequent screening: do physician recommendations buffer negative effects</article-title>
+          ?
+          <source>J Med Screen</source>
+          <year>2012</year>
+          ;
+          <volume>19</volume>
+          :
+          <fpage>35</fpage>
+          -
+          <lpage>41</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref28">
+        <mixed-citation>
+          [28]
+          <string-name>
+            <surname>Gulshan</surname>
+            <given-names>V</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Peng</surname>
+            <given-names>L</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Coram</surname>
+            <given-names>M</given-names>
+          </string-name>
+          , et al.
+          <article-title>Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs</article-title>
+          .
+          <source>JAMA</source>
+          <year>2016</year>
+          ;
+          <volume>316</volume>
+          :
+          <fpage>2402</fpage>
+          -
+          <lpage>10</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref29">
+        <mixed-citation>
+          [29]
+          <string-name>
+            <surname>Hannun</surname>
+            <given-names>AY</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Rajpurkar</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Haghpanahi</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Tison</surname>
+            <given-names>GH</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Bourn</surname>
+            <given-names>C</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Turakhia</surname>
+            <given-names>MP</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ng</surname>
+            <given-names>AY</given-names>
+          </string-name>
+          .
+          <article-title>Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network</article-title>
+          .
+          <source>Nat Med</source>
+          <year>2019</year>
+          ;
+          <volume>25</volume>
+          (
+          <issue>1</issue>
+          ):
+          <fpage>65</fpage>
+          -
+          <lpage>9</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref30">
+        <mixed-citation>
+          [30]
+          <string-name>
+            <surname>Cuocolo</surname>
+            <given-names>R</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Perillo</surname>
+            <given-names>T</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>De Rosa</surname>
+            <given-names>E</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ugga</surname>
+            <given-names>L</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Petretta</surname>
+            <given-names>M.</given-names>
+          </string-name>
+          <article-title>Current applications of big data and machine learning in cardiology</article-title>
+          .
+          <source>J Geriatr Cardiol</source>
+          <year>2019</year>
+          ;
+          <volume>16</volume>
+          (
+          <issue>8</issue>
+          ):
+          <fpage>601</fpage>
+          -
+          <lpage>607</lpage>
+          . doi:
+          <volume>10</volume>
+          .11909/j.issn.
+          <volume>1671</volume>
+          -
+          <fpage>5411</fpage>
+          .
+          <year>2019</year>
+          .
+          <volume>08</volume>
+          .002.
+        </mixed-citation>
+      </ref>
+      <ref id="ref31">
+        <mixed-citation>
+          [31]
+          <string-name>
+            <surname>Ghesu</surname>
+            <given-names>FC</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Georgescu</surname>
+            <given-names>B</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Zheng</surname>
+            <given-names>Y</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Grbic</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Maier</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Hornegger</surname>
+            <given-names>A</given-names>
+          </string-name>
+          , et al.
+          <article-title>Multi-scale-scale deep reinforcement learning for real-time 3D landmark detection in CT scans</article-title>
+          .
+          <source>IEEE Trans Pattern Ana Mach Intell</source>
+          <year>2019</year>
+          ;
+          <volume>41</volume>
+          :
+          <fpage>176</fpage>
+          -
+          <lpage>89</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref32">
+        <mixed-citation>
+          [32]
+          <string-name>
+            <surname>Dey</surname>
+            <given-names>D</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Slomka</surname>
+            <given-names>PJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Leeson</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Comaniciu</surname>
+            <given-names>D</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Shrestha</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Sengupta</surname>
+            <given-names>PP</given-names>
+          </string-name>
+          , et al.
+          <article-title>Artificial intelligence in cardiovascular imaging</article-title>
+          .
+          <source>JACC</source>
+          <year>2019</year>
+          ;
+          <volume>73</volume>
+          (
+          <issue>11</issue>
+          ):
+          <fpage>1317</fpage>
+          -
+          <lpage>35</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref33">
+        <mixed-citation>
+          [33]
+          <string-name>
+            <surname>Al'Aref</surname>
+            <given-names>SJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Anchouche</surname>
+            <given-names>K</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Singh</surname>
+            <given-names>G</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Slomka</surname>
+            <given-names>PJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kolli</surname>
+            <given-names>KK</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Kumar</surname>
+            <given-names>A</given-names>
+          </string-name>
+          , et al.
+          <article-title>Clinical applications of machine learning in cardiovascular disease and its relevance to cardiac imaging</article-title>
+          .
+          <source>Eur Heart J</source>
+          <year>2019</year>
+          ;
+          <volume>40</volume>
+          :
+          <fpage>1975</fpage>
+          -
+          <lpage>86</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref34">
+        <mixed-citation>
+          [34]
+          <string-name>
+            <surname>Du</surname>
+            <given-names>T</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Xie</surname>
+            <given-names>L</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Liu</surname>
+            <given-names>X</given-names>
+          </string-name>
+          , et al.
+          <article-title>Intelligent recognition of coronary angiography by deep learning technology: a novel computer-aided diagnostic system Paper presented at: transcatheter cardiovascular therapeutics symposium</article-title>
+          (TCT);
+          <year>2018</year>
+          . September 21-25San Diego, CA.
+        </mixed-citation>
+      </ref>
+      <ref id="ref35">
+        <mixed-citation>
+          [35]
+          <string-name>
+            <surname>Sengupta</surname>
+            <given-names>PP</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Huang</surname>
+            <given-names>YM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Bansal</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Ashrafi</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Fisher</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Shameer</surname>
+            <given-names>K</given-names>
+          </string-name>
+          , et al.
+          <article-title>Cognitive Machine-Learning Algorithm for Cardiac Imaging: A Pilot Study for Differentiating Constrictive Pericarditis From Restrictive Cardiomyopathy</article-title>
+          .
+          <source>Circ Cardiovasc Imaging 2016 Jun;9</source>
+          (
+          <issue>6</issue>
+          ):
+          <fpage>e004330</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref36">
+        <mixed-citation>
+          [36]
+          <article-title>Cardiocare program Edwards Life sciences</article-title>
+          , Edwards, Lifesciences. “CardioCare.” Edwards Lifesciences.
+          <source>Edwards Lifesciences</source>
+          <year>2020</year>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref37">
+        <mixed-citation>
+          [37]
+          <string-name>
+            <surname>Zhang</surname>
+            <given-names>J</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Gajjala</surname>
+            <given-names>S</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Agrawal</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Tison</surname>
+            <given-names>GH</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Hallock</surname>
+            <given-names>LA</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Beussink-Nelson</surname>
+            <given-names>L</given-names>
+          </string-name>
+          , et al.
+          <article-title>Fully automated echocardiogram interpretation in clinical practice</article-title>
+          .
+          <source>Circulation</source>
+          <year>2018</year>
+          ;
+          <volume>138</volume>
+          (
+          <issue>16</issue>
+          ):
+          <fpage>1623</fpage>
+          -
+          <lpage>35</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref38">
+        <mixed-citation>
+          [38]
+          <string-name>
+            <surname>Itchhaporia</surname>
+            <given-names>D</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Snow</surname>
+            <given-names>PB</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Almassy</surname>
+            <given-names>RJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Oetgen</surname>
+            <given-names>WJ</given-names>
+          </string-name>
+          .
+          <article-title>Artificial neural networks: current status in cardiovascular medicine</article-title>
+          .
+          <source>JACC</source>
+          <year>1996</year>
+          ;
+          <volume>28</volume>
+          :
+          <fpage>515</fpage>
+          -
+          <lpage>21</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref39">
+        <mixed-citation>
+          [39]
+          <string-name>
+            <surname>Kannathal</surname>
+            <given-names>N</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Acharya</surname>
+            <given-names>UR</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Lim</surname>
+            <given-names>CM</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Sadasivan</surname>
+            <given-names>PK</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Krishnan</surname>
+            <given-names>SM</given-names>
+          </string-name>
+          .
+          <article-title>Classification of cardiac patient states using artificial neural networks</article-title>
+          .
+          <source>Exp Clin Cardiol</source>
+          <year>2003</year>
+          ;
+          <volume>8</volume>
+          :
+          <fpage>206</fpage>
+          -
+          <lpage>11</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref40">
+        <mixed-citation>
+          [40]
+          <string-name>
+            <surname>Trahan</surname>
+          </string-name>
+          , Ronald. “
+          <string-name>
+            <surname>Cardiologs ECG Analysis</surname>
+          </string-name>
+          <article-title>Platform' Receives FDA Clearance</article-title>
+          .” VentureBeat, VentureBeat, 5
+          <article-title>July 2017, venturebeat</article-title>
+          .com/
+          <year>2017</year>
+          /07/05/cardiologsecg
+          <article-title>-analysis-platform-receives-fda-clearance/.</article-title>
+        </mixed-citation>
+      </ref>
+      <ref id="ref41">
+        <mixed-citation>
+          [41]
+          <string-name>
+            <surname>Rajpurkar</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Hannun</surname>
+            <given-names>AY</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Haghpanahi</surname>
+            <given-names>M</given-names>
+          </string-name>
+          ,
+          <article-title>Bourn Ng AY</article-title>
+          .
+          <article-title>Cardiologist-level arrhythmia detection with convolutional neural networks</article-title>
+          .
+          <source>Comput Vis Pattern Recognit</source>
+          <year>2017</year>
+          ;
+          <volume>1</volume>
+          :
+          <fpage>65</fpage>
+          -
+          <lpage>9</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref42">
+        <mixed-citation>
+          [42]
+          <string-name>
+            <surname>Baxt</surname>
+            <given-names>WG</given-names>
+          </string-name>
+          .
+          <article-title>Use of an artificial neural network for the diagnosis of myocardial infarction</article-title>
+          .
+          <source>Ann Intern Med</source>
+          <year>1991</year>
+          ;
+          <volume>115</volume>
+          :
+          <fpage>843</fpage>
+          -
+          <lpage>8</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref43">
+        <mixed-citation>
+          [43]
+          <string-name>
+            <surname>Lindholm</surname>
+            <given-names>D</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Holzmann</surname>
+            <given-names>M.</given-names>
+          </string-name>
+          <article-title>Machine learning for improved detection of myocardial infarction inpatients presenting with chest pain in the emergency department (abstr)</article-title>
+          .
+          <source>J Am Coll Cardiol</source>
+          <year>2018</year>
+          ;
+          <volume>140</volume>
+          (
+          <issue>Suppl</issue>
+          :
+          <fpage>A22</fpage>
+          ):
+          <fpage>899</fpage>
+          -
+          <lpage>909</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref44">
+        <mixed-citation>
+          [44]
+          <string-name>
+            <surname>Steele</surname>
+            <given-names>AJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Denaxas</surname>
+            <given-names>SC</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Shah</surname>
+            <given-names>AD</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Hemingway</surname>
+            <given-names>H</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Luscombe</surname>
+            <given-names>NM</given-names>
+          </string-name>
+          .
+          <article-title>Machine learning models in electronic health records can outperform conventional survival models for predicting patient mortality in coronary artery disease</article-title>
+          .
+          <source>PLoS One</source>
+          <year>2018</year>
+          ;
+          <volume>13</volume>
+          (
+          <issue>8</issue>
+          ):e0202344. doi:
+          <volume>10</volume>
+          .1371/journal.pone.
+          <volume>0202344</volume>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref45">
+        <mixed-citation>
+          [45]
+          <string-name>
+            <surname>Ranganathan</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Pramesh</surname>
+            <given-names>CS</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Buyse</surname>
+            <given-names>M.</given-names>
+          </string-name>
+          <article-title>Common pitfalls in statistical analysis: clinical versus statistical significance</article-title>
+          .
+          <source>Perspect Clin Res</source>
+          <year>2015</year>
+          ;
+          <volume>6</volume>
+          (
+          <issue>3</issue>
+          ):
+          <fpage>169</fpage>
+          -
+          <lpage>70</lpage>
+          . doi:
+          <volume>10</volume>
+          .4103/
+          <fpage>2229</fpage>
+          -
+          <lpage>3485</lpage>
+          .
+          <fpage>159943</fpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref46">
+        <mixed-citation>
+          [46]
+          <string-name>
+            <surname>Dawes</surname>
+            <given-names>TJW</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>de Marvao</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Shi</surname>
+            <given-names>W</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Fletcher</surname>
+            <given-names>T</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Watson</surname>
+            <given-names>GMJ</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Wharton</surname>
+            <given-names>J</given-names>
+          </string-name>
+          , et al.
+          <article-title>Machine learning of three-dimensional right ventricular motion enables outcome prediction in pulmonary hypertension: a cardiac MR imaging study</article-title>
+          .
+          <source>Radiology</source>
+          <year>2017</year>
+          ;
+          <volume>283</volume>
+          :
+          <fpage>381</fpage>
+          -
+          <lpage>90</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref47">
+        <mixed-citation>
+          [47]
+          <string-name>
+            <surname>Stead</surname>
+            <given-names>WW.</given-names>
+          </string-name>
+          <article-title>Clinical implications and challenges of artificial intelligence and deep learning</article-title>
+          .
+          <source>JAMA</source>
+          <year>2018</year>
+          ;
+          <volume>11</volume>
+          :
+          <fpage>1107</fpage>
+          -
+          <lpage>8</lpage>
+          .
+        </mixed-citation>
+      </ref>
+      <ref id="ref48">
+        <mixed-citation>
+          [48]
+          <string-name>
+            <surname>Lyon</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Mincholé</surname>
+            <given-names>A</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Martínez</surname>
+            <given-names>JP</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Laguna</surname>
+            <given-names>P</given-names>
+          </string-name>
+          ,
+          <string-name>
+            <surname>Rodriguez</surname>
+            <given-names>B</given-names>
+          </string-name>
+          .
+          <article-title>Computational techniques for ECG analysis and interpretation in light of their contribution to medical advances</article-title>
+          .
+          <source>J R Soc Interface</source>
+          <year>2018</year>
+          ;
+          <volume>15</volume>
+          (
+          <issue>138</issue>
+          ):
+          <fpage>20170821</fpage>
+          . doi:
+          <volume>10</volume>
+          .1098/rsif.
+          <year>2017</year>
+          .
+          <volume>0821</volume>
+          .
+        </mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
+
